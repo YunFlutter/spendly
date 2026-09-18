@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:spendly/main.dart';
 
 void main() {
@@ -8,5 +9,6 @@ void main() {
     expect(find.text('Spendly'), findsOneWidget);
     expect(find.text('프로젝트 기반을 준비했습니다'), findsOneWidget);
     expect(find.text('현재 단계  ·  Design & Foundation'), findsOneWidget);
+    expect(find.byType(PhosphorIcon), findsOneWidget);
   });
 }

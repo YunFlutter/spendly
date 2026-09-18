@@ -18,7 +18,7 @@ lib/
 │  ├─ transactions/
 │  ├─ reports/
 │  └─ settings/
-└─ shared/              # project SVG and reusable UI
+└─ shared/              # semantic icon wrapper and reusable UI
 ```
 
 ## 입력 파이프라인

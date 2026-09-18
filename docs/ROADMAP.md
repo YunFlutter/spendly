@@ -6,7 +6,8 @@
 - [x] 비-Material 시작 화면
 - [x] 주요 화면 목업과 README
 - [ ] Feature-first 구조
-- [ ] Spendly 디자인 토큰과 SVG 아이콘 시스템
+- [x] Phosphor 기반 의미형 아이콘 래퍼
+- [ ] Spendly 디자인 토큰
 - [x] CI 구성: format, analyze, test
 
 ## M1 Import

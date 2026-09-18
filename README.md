@@ -95,10 +95,15 @@ Excel 한 행의 날짜 형식이 잘못돼도 전체 가져오기를 실패시�
 
 - `Icons.*`와 Material Icons 미사용
 - 기본 `AppBar`, `FloatingActionButton`, `ListTile`, `ElevatedButton`, `BottomNavigationBar` 외형 미사용
-- `flutter_svg` 기반 전용 SVG 아이콘
+- 별도 SVG 제작 없이 `phosphor_flutter`의 Regular 아이콘을 사용
+- 화면은 패키지를 직접 호출하지 않고 `SpendlyIcon` 의미 기반 래퍼만 사용
 - 세이지·크림·포레스트·살구색 디자인 토큰
 - 카드 남발 대신 여백·타이포그래피·얇은 구분선으로 위계 표현
 - 차트와 동일한 정보를 텍스트로도 제공
+
+### 아이콘 선택 이유
+
+1인 프로젝트에서 전용 SVG 세트를 직접 제작하면 아이콘 품질과 기능 개발 속도를 동시에 관리하기 어렵습니다. Spendly는 MIT 라이선스의 Phosphor Icons를 사용하고, 초기에는 선 굵기가 일정한 `Regular` 스타일만 허용합니다. 아이콘 이름은 화면 의미에 맞춘 `SpendlyIconName`으로 한 번 더 감싸므로 패키지 교체나 아이콘 변경이 필요해도 기능 화면을 수정하지 않습니다.
 
 ## 기술 구성
 
@@ -107,7 +112,7 @@ Excel 한 행의 날짜 형식이 잘못돼도 전체 가져오기를 실패시�
 | 영역 | 기술 | 상태 |
 |---|---|---|
 | App | Flutter, Dart | 프로젝트 생성 완료 |
-| UI | shadcn_flutter, flutter_svg, google_fonts | 적용 예정 |
+| UI | shadcn_flutter, phosphor_flutter, google_fonts | 아이콘 기반 적용 완료 |
 | Chart & Motion | fl_chart, flutter_animate | 적용 예정 |
 | State | Riverpod | 적용 예정 |
 | Navigation | go_router | 적용 예정 |

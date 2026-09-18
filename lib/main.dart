@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:spendly/shared/ui/spendly_icon.dart';
 
 void main() {
   runApp(const SpendlyApp());
@@ -83,6 +84,12 @@ class ProjectPreviewPage extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SpendlyIcon(
+                            SpendlyIconName.import,
+                            color: _apricot,
+                            size: 28,
+                          ),
+                          SizedBox(height: 14),
                           Text(
                             '프로젝트 기반을 준비했습니다',
                             style: TextStyle(
