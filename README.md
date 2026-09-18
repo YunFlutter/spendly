@@ -25,35 +25,6 @@ Spendly는 **기획·UI 설계와 Flutter 프로젝트 기반 구축 단계**입
 
 Spendly는 입력 형태별로 데이터를 분석한 뒤 모두 `TransactionCandidate`로 정규화합니다. 사용자는 잘못 읽힌 항목과 중복 후보만 확인하고, 확정한 거래만 월별 리포트에 반영합니다.
 
-## 주요 화면
-
-<table>
-  <tr>
-    <td align="center"><strong>홈</strong></td>
-    <td align="center"><strong>가져오기 선택</strong></td>
-    <td align="center"><strong>Excel 컬럼 매핑</strong></td>
-  </tr>
-  <tr>
-    <td><img src="docs/images/01_home.png" width="260" alt="Spendly 홈 화면" /></td>
-    <td><img src="docs/images/02_import_source.png" width="260" alt="소비내역 가져오기 방식 선택" /></td>
-    <td><img src="docs/images/03_spreadsheet_mapping.png" width="260" alt="Excel 컬럼 매핑" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>비동기 처리</strong></td>
-    <td align="center"><strong>일괄 검수</strong></td>
-    <td align="center"><strong>중복 비교</strong></td>
-  </tr>
-  <tr>
-    <td><img src="docs/images/04_processing.png" width="260" alt="비동기 처리 상태" /></td>
-    <td><img src="docs/images/05_batch_review.png" width="260" alt="여러 거래 일괄 검수" /></td>
-    <td><img src="docs/images/06_duplicate_compare.png" width="260" alt="중복 거래 비교" /></td>
-  </tr>
-</table>
-
-<p align="center">
-  <img src="docs/images/07_report.png" width="280" alt="월별 소비 리포트" />
-</p>
-
 ## 핵심 사용자 흐름
 
 ```mermaid
