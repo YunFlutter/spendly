@@ -117,6 +117,28 @@ draft
 - 오프라인 촬영 → 앱 재실행 → 네트워크 복구 통합 테스트
 - 처리 시간, 파싱 성공률, 수정률은 구현 후 실제 측정값만 공개
 
+## CI/CD
+
+### Pull request와 main 검증
+
+`Flutter CI`는 PR과 `main` 푸시에서 아래 작업을 수행합니다. 같은 브랜치에 새 커밋이 올라오면 진행 중인 이전 실행은 취소합니다.
+
+1. `dart format` 검사
+2. `flutter analyze`
+3. `flutter test`
+4. Android debug APK 빌드
+
+### Android 프리뷰 빌드
+
+GitHub Actions의 `Android Preview Build`를 수동 실행하면 APK 또는 app bundle을 선택해 빌드할 수 있습니다. 결과물은 workflow artifact로 14일 동안 보관합니다. Firebase 프로젝트가 연결되기 전에는 외부 배포를 자동화하지 않습니다.
+
+### 다음 단계
+
+- 핵심 가져오기 흐름의 `integration_test`
+- Firebase Emulator 기반 Firestore·Storage Security Rules 테스트
+- Firebase App Distribution 내부 테스터 배포
+- 버전 태그 기반 Play 내부 테스트 트랙 배포
+
 ## 문서
 
 - [아키텍처와 데이터 흐름](docs/ARCHITECTURE.md)

@@ -8,7 +8,8 @@
 - [ ] Feature-first 구조
 - [x] Phosphor 기반 의미형 아이콘 래퍼
 - [ ] Spendly 디자인 토큰
-- [x] CI 구성: format, analyze, test
+- [x] CI 구성: format, analyze, test, Android debug build
+- [x] 수동 Android 프리뷰 artifact 빌드
 
 ## M1 Import
 
@@ -34,6 +35,7 @@
 - [ ] 거래 fingerprint와 중복 후보
 - [ ] sourceRefs 연결
 - [ ] 환불·취소 거래 처리
+- [ ] 가져오기 → 검수 → 저장 `integration_test`
 
 ## M4 Insight
 
@@ -49,4 +51,6 @@
 - [ ] Crashlytics·Analytics·Remote Config
 - [ ] 계정과 사용자 데이터 삭제
 - [ ] Firebase Emulator 통합 테스트
+- [ ] Firebase App Distribution 내부 테스터 배포
+- [ ] 버전 태그 기반 Play 내부 테스트 트랙 배포
 - [ ] 실제 성능·비용 측정

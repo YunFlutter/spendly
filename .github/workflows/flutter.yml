@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: flutter-ci-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -12,6 +17,7 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -34,3 +40,6 @@ jobs:
 
       - name: Test
         run: flutter test
+
+      - name: Build Android debug APK
+        run: flutter build apk --debug
