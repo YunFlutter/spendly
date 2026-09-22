@@ -141,7 +141,16 @@ GitHub Actions의 `Android Preview Build`를 수동 실행하면 APK 또는 app 
 
 ## 문서
 
+- [공통 개발·에이전트 규칙](AGENTS.md)
+- [작업별 표준 절차](SKILLS.md)
+- [GitHub Flow·Pull Request·Merge 전략](docs/GIT_WORKFLOW.md)
+- [상태관리·ViewModel 가이드](docs/STATE_MANAGEMENT.md)
+- [오류 처리 가이드](docs/ERROR_HANDLING.md)
+- [데이터·오프라인·동기화 가이드](docs/DATA_AND_SYNC.md)
+- [릴리스 가이드](docs/RELEASE_GUIDE.md)
+- [의존성 정책](docs/DEPENDENCY_POLICY.md)
 - [아키텍처와 데이터 흐름](docs/ARCHITECTURE.md)
+- [Firebase 개발·테스트·배포 가이드](docs/FIREBASE_GUIDE.md)
 - [개발 로드맵](docs/ROADMAP.md)
 - [UI 구현 가이드](docs/UI_GUIDE.md)
 
