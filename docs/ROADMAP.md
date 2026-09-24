@@ -1,5 +1,7 @@
 # Roadmap
 
+각 마일스톤의 선행 관계, 권장 Issue 분리와 단계별 완료 기준은 [Implementation Plan](IMPLEMENTATION_PLAN.md)을 따른다.
+
 ## M0 Foundation
 
 - [x] Flutter Android·iOS 프로젝트 생성

@@ -152,6 +152,7 @@ GitHub Actions의 `Android Preview Build`를 수동 실행하면 APK 또는 app 
 - [아키텍처와 데이터 흐름](docs/ARCHITECTURE.md)
 - [Firebase 개발·테스트·배포 가이드](docs/FIREBASE_GUIDE.md)
 - [개발 로드맵](docs/ROADMAP.md)
+- [기획 기반 구현 순서와 단계별 완료 기준](docs/IMPLEMENTATION_PLAN.md)
 - [UI 구현 가이드](docs/UI_GUIDE.md)
 
 ## 실행
